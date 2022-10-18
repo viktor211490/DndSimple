@@ -1,0 +1,14 @@
+﻿using DndSimple.Application.Common.Mappings;
+using DndSimple.Domain.Entities;
+
+namespace DndSimple.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+public class TodoItemBriefDto : IMapFrom<TodoItem>
+{
+    public int Id { get; set; }
+
+    public int ListId { get; set; }
+
+    public string? Title { get; set; }
+
+    public bool Done { get; set; }
+}
