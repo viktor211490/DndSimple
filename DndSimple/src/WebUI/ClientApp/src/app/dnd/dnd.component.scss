@@ -1,0 +1,27 @@
+mat-sidenav-container {
+  height: 93.4%;
+  //min-height: 400px;
+}
+
+mat-sidenav-container,
+mat-sidenav {
+  padding: 16px;
+}
+
+mat-sidenav {
+  width: 15%;
+  min-width: 150px;
+
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.list-button {
+  width: 100%;
+}
+.container {
+  height: 400px;
+}
+

@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>DnD</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+
+<mat-sidenav-container color="primary" style="position: absolute">
+  <mat-sidenav #drawer mode="side" [(opened)]="show">
+    <mat-list role="list">
+      <mat-list-item role="listitem"><a href='/'><button class="list-button" mat-flat-button>Главная</button></a></mat-list-item>
+      <mat-list-item role="listitem"><a href='/battle'><button class="list-button" mat-flat-button>Сражение</button></a></mat-list-item>
+      <mat-list-item role="listitem"><a href='/enemies'><button class="list-button" mat-flat-button>Враги</button></a></mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-container style="padding: 4px !important;">
+    <router-outlet></router-outlet>
+  </mat-sidenav-container>
+</mat-sidenav-container>
